@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Webpage Title -->
+    <title>Sakib Rokoni</title>
+
+    <!-- Styles -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="css/swiper.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/flow.css" />
+    <link rel="stylesheet" href="src/flowchat.css" />
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/chatbot-logo.png" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbarExample">
+    <!-- Navigation -->
+    <nav
+      id="navbarExample"
+      class="navbar navbar-expand-lg fixed-top navbar-light"
+      aria-label="Main navigation"
+    >
+      <div class="container">
+        <!-- Image Logo -->
+        <a
+          class="navbar-brand logo-image"
+          href="index.html"
+          style="text-decoration: none"
+          ><img
+            src="images/chatbot-logo.png"
+            alt="alternative"
+            style="width: 40px"
+          />
+          WeConnect</a
+        >
+
+        <button
+          class="navbar-toggler p-0 border-0"
+          type="button"
+          id="navbarSideCollapse"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="navbar-collapse offcanvas-collapse"
+          id="navbarsExampleDefault"
+        >
+          <ul class="navbar-nav ms-auto navbar-nav-scroll">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#header"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#details">Details</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end of navbar-collapse -->
+      </div>
+      <!-- end of container -->
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="text-container">
+              <h1 class="h1-large">
+                The ChatBot for <span class="replace-me"
+                  >small projects, young startups</span
+                >
+              </h1>
+              <p class="p-large">
+                WeConnect team help small business and young startups to
+                setup their basic chatbot on the site.
+              </p>
+              <a class="btn-solid-lg" href="#">Sign up</a>
+            </div>
+            <!-- end of text-container -->
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-6">
+            <div class="image-container">
+              <img
+                class="img-fluid"
+                src="images/header-illustration.svg"
+                alt="alternative"
+              />
+            </div>
+            <!-- end of image-container -->
+          </div>
+          <!-- end of col -->
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- Copyright -->
+    <footer>
+      <div class="d-flex align-items-center justify-content-center my-5">
+        <p><small>© Sakib Rokoni 2023</small></p>
+      </div>
+    </footer>
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+      <img src="images/up-arrow.png" alt="alternative" />
+    </button>
+    <!-- end of back to top button -->
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap framework -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Swiper for image and text sliders -->
+    <script src="js/purecounter.min.js"></script>
+    <!-- Purecounter counter for statistics numbers -->
+    <script src="js/replaceme.min.js"></script>
+    <!-- ReplaceMe for rotating text -->
+    <script src="js/scripts.js"></script>
+    <!-- Custom scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="src/flowchat.js"></script>
+    <script src="src/flowchatui.js"></script>
+    <script>
+      $(function () {
+        $.getJSON("demo-data/data.json", function (dataJSON) {
+          $("#flowchat").flowchat({
+            dataJSON: dataJSON,
+            autoStart: false,
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,468 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body,
+p {
+  color: #565578;
+  font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+
+h1 {
+  color: #272556;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  letter-spacing: -0.4px;
+}
+
+.p-large {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.p-small {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.li-space-lg li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #565578;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #565578;
+  text-decoration: underline;
+}
+
+.no-line {
+  text-decoration: none;
+}
+
+.no-line:hover {
+  text-decoration: none;
+}
+
+.blue {
+  color: #6168ff;
+}
+
+.bg-gray {
+  background-color: #f9f8f8;
+}
+
+.btn-solid-reg {
+  display: inline-block;
+  padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+  border: 1px solid #272556;
+  border-radius: 30px;
+  background-color: #272556;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-solid-reg:hover {
+  background-color: transparent;
+  color: #272556;
+  /* needs to stay here because of the color property of a tag */
+  text-decoration: none;
+}
+
+.btn-solid-lg {
+  display: inline-block;
+  padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+  border: 1px solid #272556;
+  border-radius: 30px;
+  background-color: #272556;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-solid-lg:hover {
+  background-color: transparent;
+  color: #272556;
+  /* needs to stay here because of the color property of a tag */
+  text-decoration: none;
+}
+
+.btn-solid-sm {
+  display: inline-block;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border: 1px solid #272556;
+  border-radius: 30px;
+  background-color: #272556;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-solid-sm:hover {
+  background-color: transparent;
+  color: #272556;
+  /* needs to stay here because of the color property of a tag */
+  text-decoration: none;
+}
+
+.btn-outline-reg {
+  display: inline-block;
+  padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+  border: 1px solid #f25c05;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #f25c05;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-outline-reg:hover {
+  background-color: #f25c05;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-outline-lg {
+  display: inline-block;
+  padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+  border: 1px solid #f25c05;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #f25c05;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-outline-lg:hover {
+  background-color: #565578;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-outline-sm {
+  display: inline-block;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border: 1px solid #f25c05;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #f25c05;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-outline-sm:hover {
+  background-color: #f25c05;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 0.6s;
+  animation: fadeIn 0.6s;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 5px solid slategrey;
+}
+
+/*     Navigation     */
+
+.navbar {
+  background-color: #fff2dc;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+}
+
+.navbar .navbar-brand {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar .logo-image img {
+  width: 132px;
+  height: 30px;
+}
+
+.navbar .logo-text {
+  color: #272556;
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 1rem;
+  text-decoration: none;
+}
+
+.offcanvas-collapse {
+  position: fixed;
+  top: 3.25rem;
+  /* adjusts the height between the top of the page and the offcanvas menu */
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-y: auto;
+  visibility: hidden;
+  background-color: #fff2dc;
+  transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+}
+
+.offcanvas-collapse.open {
+  visibility: visible;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.navbar .navbar-nav {
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar .nav-item .nav-link {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  color: #272556;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.navbar .nav-item.dropdown.show .nav-link,
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+  color: #f25c05;
+}
+
+.navbar .navbar-toggler {
+  padding: 0;
+  border: none;
+  font-size: 1.25rem;
+}
+
+/******************/
+
+/*     Header     */
+
+/******************/
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 9rem;
+  background-color: #fff2dc;
+  text-align: center;
+}
+
+.header .h1-large {
+  margin-bottom: 15px;
+}
+
+.header .replace-me {
+  color: #f25c05;
+}
+
+.header .replace-me span {
+  text-decoration: underline;
+}
+
+.header .p-large {
+  margin-bottom: 2.75rem;
+}
+
+.header .btn-solid-lg {
+  display: block;
+  margin-bottom: 1.75rem;
+}
+
+.header .text-container {
+  margin-bottom: 5rem;
+}
+
+/*     Media Queries     */
+
+/*************************/
+
+/* Min-width 768px */
+
+@media (min-width: 768px) {
+  /* Header */
+  .header {
+    padding-top: 9rem;
+  }
+  .header .h1-large {
+    font-size: 3.75rem;
+    line-height: 4.625rem;
+  }
+}
+
+/* Min-width 992px */
+
+@media (min-width: 992px) {
+  /* General Styles */
+  .h2-heading {
+    width: 33rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .p-heading {
+    width: 46rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* Navigation */
+  .navbar {
+    padding-top: 1.75rem;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all 0.2s;
+  }
+  .navbar.extra-page {
+    padding-top: 0.5rem;
+  }
+  .navbar.top-nav-collapse {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #fff2dc;
+  }
+  .offcanvas-collapse {
+    position: static;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: transparent;
+    overflow-y: visible;
+    visibility: visible;
+  }
+  .offcanvas-collapse.open {
+    -webkit-transform: none;
+    transform: none;
+  }
+  .navbar .navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .navbar .nav-item .nav-link {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .navbar .nav-item .btn-outline-sm {
+    margin-top: 0;
+    margin-left: 0.625rem;
+  }
+
+  /* Header */
+  .header {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    text-align: left;
+  }
+  .header .text-container {
+    margin-bottom: 0;
+  }
+  .header .btn-solid-lg {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+/* Min-width 1200px */
+
+@media (min-width: 1200px) {
+  /* General Styles */
+  .container {
+    max-width: 1140px;
+  }
+
+  /* Header */
+  .header {
+    overflow: hidden;
+    padding-top: 18.5rem;
+    padding-bottom: 18rem;
+  }
+  .header .image-container {
+    position: relative;
+  }
+  .header .image-container img {
+    position: absolute;
+    top: -180px;
+    left: -10px;
+    width: 840px;
+    max-width: none;
+  }
+}
